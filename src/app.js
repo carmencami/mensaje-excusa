@@ -19,16 +19,16 @@ window.onload = function() {
 
   function Onload() {
     let excusas =
-      who[Math.floor(math.random() * 3)] +
+      who[Math.floor(Math.random() * 3)] +
       " " +
-      what[Math.floor(math.random() * 3)] +
+      what[Math.floor(Math.random() * 3)] +
       " " +
-      when[Math.floor(math.random() * 4)];
+      when[Math.floor(Math.random() * 4)];
 
     return excusas;
   }
   document.querySelector("#button").addEventListener("click", () => {
-    document.querySelector("#excuse").innerHTML = generate();
+    document.querySelector("#excuse").innerHTML = Onload();
   });
   console.log(Onload());
 
